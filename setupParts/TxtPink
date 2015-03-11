@@ -1,0 +1,11 @@
+os.loadAPI("/req/menuApi")
+os.loadAPI("/req/config")
+
+config.load("configs","server")
+term.clear()
+term.setCursorPos(1, 1)
+tcol = 64
+config.writeVal("tcol",tcol)
+config.save()
+
+shell.run("setupParts/floorsMenu")

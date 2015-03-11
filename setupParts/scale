@@ -1,0 +1,18 @@
+os.loadAPI("/req/menuApi")
+os.loadAPI("/req/config")
+
+local menu = {
+[1] = { text = "How Big are your monitors", handler = function() shell.run("/setupParts/textMenu") end},
+[2] = { text = "1x1", handler = function() shell.run("setupParts/s1") end},
+[3] = { text = "2x2", handler = function() shell.run("setupParts/s2") end},
+[4] = { text = "3x3", handler = function() shell.run("setupParts/s3") end},
+[5] = { text = "4x4", handler = function() shell.run("setupParts/s4") end},
+[6] = { text = "5x5", handler = function() shell.run("setupParts/s5") end},
+}
+
+menuApi.setBarTextColor(32768)
+menuApi.setTextColor(1)
+menuApi.setBarColor(1)
+menuApi.setBackgroundColor(32768)
+
+menuApi.runMenu(menu)

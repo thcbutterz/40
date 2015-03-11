@@ -1,0 +1,28 @@
+os.loadAPI("/req/menuApi")
+os.loadAPI("/req/config")
+
+local menu = {
+[1] = { text = "How many floors do you have?", handler = function() shell.run("/setupParts/floorsMenu") end},
+[2] = { text = "2 Floors", handler = function() shell.run("setupParts/Floors2") end},
+[3] = { text = "3 Floors", handler = function() shell.run("setupParts/Floors3") end},
+[4] = { text = "4 Floors", handler = function() shell.run("setupParts/Floors4") end},
+[5] = { text = "5 Floors", handler = function() shell.run("setupParts/Floors5") end},
+[6] = { text = "6 Floors", handler = function() shell.run("setupParts/Floors6") end},
+[7] = { text = "7 Floors", handler = function() shell.run("setupParts/Floors7") end},
+[8] = { text = "8 Floors", handler = function() shell.run("setupParts/Floors8") end},
+[9] = { text = "9 Floors", handler = function() shell.run("setupParts/Floors9") end},
+[10] = { text = "10 Floors", handler = function() shell.run("setupParts/Floors10") end},
+[11] = { text = "11 Floors", handler = function() shell.run("setupParts/Floors11") end},
+[12] = { text = "12 Floors", handler = function() shell.run("setupParts/Floors12") end},
+[13] = { text = "13 Floors", handler = function() shell.run("setupParts/Floors13") end},
+[14] = { text = "14 Floors", handler = function() shell.run("setupParts/Floors14") end},
+[15] = { text = "15 Floors", handler = function() shell.run("setupParts/Floors15") end},
+[16] = { text = "16 Floors", handler = function() shell.run("setupParts/Floors16") end}
+}
+
+menuApi.setBarTextColor(32768)
+menuApi.setTextColor(1)
+menuApi.setBarColor(1)
+menuApi.setBackgroundColor(32768)
+
+menuApi.runMenu(menu)

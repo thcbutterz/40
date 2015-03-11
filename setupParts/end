@@ -1,0 +1,237 @@
+os.loadAPI("/req/menuApi")
+os.loadAPI("/req/config")
+
+
+config.load("configs","server")
+term.clear()
+term.setCursorPos(1, 1)
+nof = tonumber(config.readVal("floors"))
+if nof >= 2 then
+if nof <= 16 then
+	term.clear()
+	term.setCursorPos(1, 1)
+	print("What is the name of your first floor?")
+	f1 = read()
+	config.writeVal("f1",f1)
+	print("What is the number of your first floor monitor?")
+	m1 = read()
+	config.writeVal("m1",m1)
+	config.save()
+	
+	term.clear()
+	term.setCursorPos(1, 1)
+	config.load("configs","server")
+	print("What is the name of your second floor?")
+	f2 = read()
+	config.writeVal("f2",f2)
+	print("What is the number of your second floor monitor?")
+	m2 = read()
+	config.writeVal("m2",m2)
+	config.save()
+
+	if nof >= 3 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your third floor?")
+		f3 = read()
+		config.writeVal("f3",f3)
+		print("What is the number of your third floor monitor?")
+		m3 = read()
+		config.writeVal("m3",m3)
+		config.save()
+	end
+	
+	if nof >= 4 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your forth floor?")
+		f4 = read()
+		config.writeVal("f4",f4)
+		print("What is the number of your forth floor monitor?")
+		m4 = read()
+		config.writeVal("m4",m4)
+		config.save()
+	end
+	
+	if nof >= 5 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your fifth floor?")
+		f5 = read()
+		config.writeVal("f5",f5)
+		print("What is the number of your fifth floor monitor?")
+		m5 = read()
+		config.writeVal("m5",m5)
+		config.save()
+	end
+	
+	if nof >= 6 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your sixth floor?")
+		f6 = read()
+		config.writeVal("f6",f6)
+		print("What is the number of your sixth floor monitor?")
+		m6 = read()
+		config.writeVal("m6",m6)
+		config.save()
+	end
+	
+	if nof >= 7 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your seventh floor?")
+		f7 = read()
+		config.writeVal("f7",f7)
+		print("What is the number of your seventh floor monitor?")
+		m7 = read()
+		config.writeVal("m7",m7)
+		config.save()
+	end
+	
+	if nof >= 8 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your eighth floor?")
+		f8 = read()
+		config.writeVal("f8",f8)
+		print("What is the number of your eighth floor monitor?")
+		m8 = read()
+		config.writeVal("m8",m8)
+		config.save()
+	end
+	
+	if nof >= 9 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your ninth floor?")
+		f9 = read()
+		config.writeVal("f9",f9)
+		print("What is the number of your ninth floor monitor?")
+		m9 = read()
+		config.writeVal("m9",m9)
+		config.save()
+	end
+	
+	if nof >= 10 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your tenth floor?")
+		f10 = read()
+		config.writeVal("f10",f10)
+		print("What is the number of your tenth floor monitor?")
+		m10 = read()
+		config.writeVal("m10",m10)
+		config.save()
+	end
+	
+	if nof >= 11 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your eleventh floor?")
+		f11 = read()
+		config.writeVal("f11",f11)
+		print("What is the number of your eleventh floor monitor?")
+		m11 = read()
+		config.writeVal("m11",m11)
+		config.save()
+	end
+	
+	if nof >= 12 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your twelfth floor?")
+		f12 = read()
+		config.writeVal("f12",f12)
+		print("What is the number of your twelfth floor monitor?")
+		m12 = read()
+		config.writeVal("m12",m12)
+		config.save()
+	end
+	
+	if nof >= 13 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your thirteenth floor?")
+		f13 = read()
+		config.writeVal("f13",f13)
+		print("What is the number of your thirteenth floor monitor?")
+		m13 = read()
+		config.writeVal("m13",m13)
+		config.save()
+	end
+	
+	if nof >= 14 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your fourteenth floor?")
+		f14 = read()
+		config.writeVal("f14",f14)
+		print("What is the number of your fourteenth floor monitor?")
+		m14 = read()
+		config.writeVal("m14",m14)
+		config.save()
+	end
+	
+	if nof >= 15 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your fifteenth floor?")
+		f15 = read()
+		config.writeVal("f15",f15)
+		print("What is the number of your fifteenth floor monitor?")
+		m15 = read()
+		config.writeVal("m15",m15)
+		config.save()
+	end
+	
+	if nof >= 16 then
+		term.clear()
+		term.setCursorPos(1, 1)
+		config.load("configs","server")
+		print("What is the name of your sixteenth floor?")
+		f16 = read()
+		config.writeVal("f16",f16)
+		print("What is the number of your sixteenth floor monitor?")
+		m16 = read()
+		config.writeVal("m16",m16)
+		config.save()
+	end
+
+	fs.delete("server.lua")
+if not shell.run("pastebin", "get", "kULurzKm", "server.lua") then
+	print("Failed to download main program. Try manually from pastebin: kULurzKm\n(this is just the setup component)")
+	return
+end
+
+file = io.open("/startup", "w")
+file:write("shell.run(\"/"..shell.resolve(".").."/server.lua\")")
+file:close()
+term.write("Done")
+term.clear()
+term.setCursorPos(1, 1)
+print("Setup is complete press any key to reboot")
+os.pullEvent("key")
+os.reboot()
+
+else
+	print("This program only supports 16 floors")
+	print("please re-run this script and try again")
+end
+else
+	print("You need at least 2 floors")
+	print("please re-run this script and try again")
+end

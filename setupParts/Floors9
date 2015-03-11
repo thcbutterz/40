@@ -1,0 +1,11 @@
+os.loadAPI("/req/menuApi")
+os.loadAPI("/req/config")
+
+config.load("configs","server")
+term.clear()
+term.setCursorPos(1, 1)
+floors = 9
+config.writeVal("floors",floors)
+config.save()
+
+shell.run("setupParts/scale")

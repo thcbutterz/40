@@ -1,0 +1,29 @@
+os.loadAPI("/req/menuApi")
+os.loadAPI("/req/config")
+
+local menu = {
+[1] = { text = "I want My Monitor Text to be:", handler = function() shell.run("/setupParts/textMenu") end},
+[2] = { text = "White", handler = function() shell.run("setupParts/TxtWhite") end},
+[3] = { text = "Orange", handler = function() shell.run("setupParts/TxtOrange") end},
+[4] = { text = "Magenta", handler = function() shell.run("setupParts/TxtMagenta") end},
+[5] = { text = "Light Blue", handler = function() shell.run("setupParts/TxtLightBlue") end},
+[6] = { text = "Yellow", handler = function() shell.run("setupParts/TxtYellow") end},
+[7] = { text = "Lime", handler = function() shell.run("setupParts/TxtLime") end},
+[8] = { text = "Pink", handler = function() shell.run("setupParts/TxtPink") end},
+[9] = { text = "Grey", handler = function() shell.run("setupParts/TxtGrey") end},
+[10] = { text = "Light Grey", handler = function() shell.run("setupParts/TxtLightGrey") end},
+[11] = { text = "Cyan", handler = function() shell.run("setupParts/TxtCyan") end},
+[12] = { text = "Purple", handler = function() shell.run("setupParts/TxtPurple") end},
+[13] = { text = "Blue", handler = function() shell.run("setupParts/TxtBlue") end},
+[14] = { text = "Brown", handler = function() shell.run("setupParts/TxtBrown") end},
+[15] = { text = "Green", handler = function() shell.run("setupParts/TxtGreen") end},
+[16] = { text = "Red", handler = function() shell.run("setupParts/TxtRed") end},
+[17] = { text = "Black", handler = function() shell.run("setupParts/TxtBlack") end}
+}
+
+menuApi.setBarTextColor(32768)
+menuApi.setTextColor(1)
+menuApi.setBarColor(1)
+menuApi.setBackgroundColor(32768)
+
+menuApi.runMenu(menu)
