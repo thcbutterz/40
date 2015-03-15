@@ -18,6 +18,16 @@ Special thanks to Ominous Penguin for tips and coding advice.
 
 -- Start Program
 os.loadAPI("req/config")
+fs.delete("/req/github")
+fs.delete("github")
+fs.delete("/req/menuApi")
+fs.delete("/req/wget")
+fs.delete("/setupParts")
+fs.delete("/setup")
+fs.delete("/setup2")
+fs.delete("/downloads")
+fs.delete("/req/req")
+fs.delete("/configs/configs")
 
 while true do
 
